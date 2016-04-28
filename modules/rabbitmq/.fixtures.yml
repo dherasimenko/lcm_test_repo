@@ -1,0 +1,6 @@
+fixtures:
+  symlinks:
+    rabbitmq: "#{source_dir}"
+    stdlib: "#{source_dir}/../stdlib"
+    apt: "#{source_dir}/../apt"
+    staging: "#{source_dir}/../staging"

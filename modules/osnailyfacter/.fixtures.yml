@@ -1,0 +1,7 @@
+fixtures:
+  symlinks:
+    osnailyfacter: "#{source_dir}"
+    l23network: "#{source_dir}/../l23network"
+    stdlib: "#{source_dir}/../stdlib"
+    apache: "#{source_dir}/../apache"
+    concat: "#{source_dir}/../concat"

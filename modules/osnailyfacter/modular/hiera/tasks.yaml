@@ -1,0 +1,15 @@
+- id: hiera
+  type: puppet
+  version: 2.0.0
+  groups: [primary-controller, controller, cinder, cinder-block-device,
+    cinder-vmware, compute, ceph-osd, primary-mongo, mongo, virt, ironic]
+  requires: [deploy_start]
+  required_for: [setup_repositories]
+  parameters:
+    puppet_manifest: /etc/puppet/modules/osnailyfacter/modular/hiera/hiera.pp
+    puppet_modules: /etc/puppet/modules
+    timeout: 3600
+  test_pre:
+    cmd: python /etc/puppet/modules/osnailyfacter/modular/hiera/hiera_pre.py
+  test_post:
+    cmd: python /etc/puppet/modules/osnailyfacter/modular/hiera/hiera_post.py

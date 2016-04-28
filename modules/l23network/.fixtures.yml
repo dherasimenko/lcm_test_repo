@@ -1,0 +1,6 @@
+fixtures:
+  symlinks:
+    l23network: "#{source_dir}"
+    stdlib: "#{source_dir}/../stdlib"
+    sysctl: "#{source_dir}/../sysctl"
+    filemapper: "#{source_dir}/../filemapper"

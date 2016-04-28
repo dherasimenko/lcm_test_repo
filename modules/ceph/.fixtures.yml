@@ -1,0 +1,4 @@
+fixtures:
+  symlinks:
+    ceph: "#{source_dir}"
+    firewall: "#{source_dir}/../firewall"

@@ -1,0 +1,8 @@
+fixtures:
+  symlinks:
+    galera: "#{source_dir}"
+    pacemaker: "#{source_dir}/../pacemaker"
+    tweaks: "#{source_dir}/../tweaks"
+    openstack: "#{source_dir}/../openstack"
+    stdlib: "#{source_dir}/../stdlib"
+    firewall: "#{source_dir}/../firewall"
