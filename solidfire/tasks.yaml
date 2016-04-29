@@ -1,0 +1,10 @@
+- id: solidfire
+  parameters:
+    cwd: /
+    puppet_manifest: /etc/puppet/modules/osnailyfacter/modular/light-lcm/solidfire/solidfire.pp
+    puppet_modules: /etc/puppet/modules
+    timeout: 3600
+  required_for: [post_deployment_end]
+  requires: [post_deployment_start]
+  role: [cinder]
+  type: puppet
